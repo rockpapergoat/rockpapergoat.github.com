@@ -4,7 +4,7 @@
   <title><![CDATA[a rock, a paper, and a goat]]></title>
   <link href="http://rockpapergoat.github.com/atom.xml" rel="self"/>
   <link href="http://rockpapergoat.github.com/"/>
-  <updated>2011-11-10T20:34:25-05:00</updated>
+  <updated>2011-11-10T20:41:05-05:00</updated>
   <id>http://rockpapergoat.github.com/</id>
   <author>
     <name><![CDATA[nate st.germain]]></name>
@@ -12,5 +12,18 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[a new blog]]></title>
+    <link href="http://rockpapergoat.github.com/blog/2011/11/10/a-new-blog/"/>
+    <updated>2011-11-10T20:36:00-05:00</updated>
+    <id>http://rockpapergoat.github.com/blog/2011/11/10/a-new-blog</id>
+    <content type="html"><![CDATA[<p>after a long hiatus, i&#8217;m starting a new blog using <a href="http://octopress.org">octopress</a>. my <a href="http://nate.adullmoment.com">old blog</a> was built using <a href="http://hobix.github.com/hobix/">hobix</a>, which has been abandoned for a few years now. after <a href="http://en.wikipedia.org/wiki/Why_the_lucky_stiff">why</a> disappeared, there hasn&#8217;t been much development with hobix. i also haven&#8217;t had the time or inclination to fix the things that are broken with my install.</p>
+
+<p>so we&#8217;ll see how this goes. twitter has replaced regular blogging for most people i know.</p>
+
+<p>i have a couple of other blogs out there that get sporadic updates. i&#8217;ll link to those, as well.</p>
+]]></content>
+  </entry>
   
 </feed>
