@@ -134,6 +134,22 @@ Nov 10 2011 Recent Posts a new blog Github Repos Status updating... @rockpapergo
 </section>
 
 
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("rockpapergoat", 4, true);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/rockpapergoat" class="twitter-follow-button" data-width="208px" data-show-count="false">Follow @rockpapergoat</a>
+  
+</section>
+
 
 
 

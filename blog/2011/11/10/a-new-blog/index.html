@@ -123,7 +123,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://rockpapergoat.github.com/blog/2011/11/10/a-new-blog/" data-via="" data-counturl="http://rockpapergoat.github.com/blog/2011/11/10/a-new-blog/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://rockpapergoat.github.com/blog/2011/11/10/a-new-blog/" data-via="rockpapergoat" data-counturl="http://rockpapergoat.github.com/blog/2011/11/10/a-new-blog/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -185,6 +185,22 @@
   <script src="/javascripts/github.js" type="text/javascript"> </script>
 </section>
 
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("rockpapergoat", 4, true);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/rockpapergoat" class="twitter-follow-button" data-width="208px" data-show-count="false">Follow @rockpapergoat</a>
+  
+</section>
 
 
 
