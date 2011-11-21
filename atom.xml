@@ -4,7 +4,7 @@
   <title><![CDATA[a rock, a paper, and a goat]]></title>
   <link href="http://rockpapergoat.github.com/atom.xml" rel="self"/>
   <link href="http://rockpapergoat.github.com/"/>
-  <updated>2011-11-21T17:10:02-05:00</updated>
+  <updated>2011-11-21T17:11:44-05:00</updated>
   <id>http://rockpapergoat.github.com/</id>
   <author>
     <name><![CDATA[nate st.germain]]></name>
@@ -29,7 +29,7 @@
 </code></pre></noscript></div>
 
 
-<p>i&#8217;ll be sure to add examples for how to call agents either in the ddl or agent code itself. seeing examples in the ddl via the built in help would be nice, though.</p>
+<p>i&#8217;ll add examples for how to call agents either in the ddl or agent code itself. seeing examples in the ddl via the built in help would be nice, though.</p>
 ]]></content>
   </entry>
   
