@@ -4,7 +4,7 @@
   <title><![CDATA[a rock, a paper, and a goat]]></title>
   <link href="http://rockpapergoat.github.com/atom.xml" rel="self"/>
   <link href="http://rockpapergoat.github.com/"/>
-  <updated>2011-11-10T22:07:19-05:00</updated>
+  <updated>2011-11-21T16:59:55-05:00</updated>
   <id>http://rockpapergoat.github.com/</id>
   <author>
     <name><![CDATA[nate st.germain]]></name>
@@ -12,6 +12,19 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[mcollective tinkering]]></title>
+    <link href="http://rockpapergoat.github.com/blog/2011/11/21/mcollective-tinkering/"/>
+    <updated>2011-11-21T16:54:00-05:00</updated>
+    <id>http://rockpapergoat.github.com/blog/2011/11/21/mcollective-tinkering</id>
+    <content type="html"><![CDATA[<p>yesterday&#8217;s afternoon activities included messing with <a href="http://puppetlabs.com/mcollective/introduction">mcollective</a> agents. i&#8217;m working on an agent that provides a lot of the same one-off, scripted checks that i&#8217;ve written in the past for os x clients. it should be somewhat useful, i hope.</p>
+
+<p>i&#8217;ll be sure to commit whatever working pieces soon.</p>
+
+<p>one of my minor annoyances with the mcollective documentation (which is generally good) is that it skips some of the really basic things, like how to invoke an agent from the command line. i&#8217;ll be sure to add examples for how to call agents either in the ddl or agent code itself. seeing examples in the ddl via the built in help would be nice, though.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[a new blog]]></title>
