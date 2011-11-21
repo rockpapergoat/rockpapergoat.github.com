@@ -92,7 +92,14 @@
 
 <p>i&#8217;ll be sure to commit whatever working pieces soon.</p>
 
-<p>one of my minor annoyances with the mcollective documentation (which is generally good) is that it skips some of the really basic things, like how to invoke an agent from the command line. i&#8217;ll be sure to add examples for how to call agents either in the ddl or agent code itself. seeing examples in the ddl via the built in help would be nice, though.</p>
+<p>one of my minor annoyances with the mcollective documentation (which is generally good) is that it skips some of the really basic things, like how to invoke an agent from the command line. for instance, it&#8217;s helpful to provide examples of how to pass arguments, like so:</p>
+
+<div><script src='https://gist.github.com/1384106.js?file='></script>
+<noscript><pre><code> mco rpc etc_facts search -F &quot;operatingsystem=~/[dD]arwin/&quot; --arg=&quot;fact=form&quot;
+</code></pre></noscript></div>
+
+
+<p>i&#8217;ll be sure to add examples for how to call agents either in the ddl or agent code itself. seeing examples in the ddl via the built in help would be nice, though.</p>
 </div>
 
 
