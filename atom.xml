@@ -4,7 +4,7 @@
   <title><![CDATA[a rock, a paper, and a goat]]></title>
   <link href="http://rockpapergoat.github.com/atom.xml" rel="self"/>
   <link href="http://rockpapergoat.github.com/"/>
-  <updated>2011-11-21T17:11:44-05:00</updated>
+  <updated>2011-11-23T18:59:29-05:00</updated>
   <id>http://rockpapergoat.github.com/</id>
   <author>
     <name><![CDATA[nate st.germain]]></name>
@@ -12,6 +12,19 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[mcollective tinkering]]></title>
+    <link href="http://rockpapergoat.github.com/blog/2011/11/23/mcollective-tinkering/"/>
+    <updated>2011-11-23T18:53:00-05:00</updated>
+    <id>http://rockpapergoat.github.com/blog/2011/11/23/mcollective-tinkering</id>
+    <content type="html"><![CDATA[<p>following up the previous post, i have a working <a href="https://github.com/rockpapergoat/mcollective-plugins/tree/macutil/agent/macutil">agent</a> uploaded. so far, it doesn&#8217;t do too much.</p>
+
+<p>i also sort of take back the gripe about agent documentation. i see now there&#8217;s some facility for including usage statements, though i&#8217;ve only seen them in application files, not agents. need to check the docs again&#8230;</p>
+
+<p>next up is getting a handle on input and output syntax and doing more interesting things. i intend to gear the macutil agent toward common os x specific tasks one might want to perform, but as i&#8217;m running through a pile of utility scripts, it&#8217;s pretty obvious that so much of these one-off shell/ruby/python/whatever scripts are reactionary. there are many places where proper configuration maagement tools and processes are a more appropriate fit.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[mcollective tinkering]]></title>
