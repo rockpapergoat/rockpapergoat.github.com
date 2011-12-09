@@ -97,11 +97,77 @@
 
 <p>here&#8217;s some notes from gary on the problem:</p>
 
-<p>{% gist 1445481}</p>
+<div><script src='https://gist.github.com/1445481.js?file='></script>
+<noscript><pre><code>Password Hash Accessing:
+
+* Grab plist file from /var/db/dslocal/nodes/Default/users/username.plist
+* Convert to xml 
+
+        plutil -convert xml1 username.plist
+* Grab the ShadowHashData key and base64 decode it (install base64 with port install base64)
+
+        echo &quot;Data from ShadowHashData Key&quot; | base64 -d &gt; ShadowHashData
+* Convert the resultant binary plist file into xml
+
+        plutil -convert xml1 ShadowHashData
+* Grab the SALTED-SHA512 Key and base64 decode it
+
+        echo &quot;Data from SALTED-SHA512 Key&quot; | base64 -d &gt; hashfile
+*Reveal hash:
+
+        xxd -p -c 256 hashfile | cut -c 9-
+
+
+## Opening a user plist from 10.7 and getting the binary-encoded bit
+        require 'rexml/document'
+        xml = File.read('file.plist')
+        doc = REXML::Document.new(xml)
+        puts String(doc.root.elements[1][7][1][0]).gsub(&quot;\n&quot;,&quot;&quot;).gsub(&quot;\t&quot;,&quot;&quot;)
+
+## Using CFPropertyList
+        require 'cfpropertylist'
+        require 'base64'
+        newplist = CFPropertyList::List.new(:file =&gt; 'demouser_edit.plist')
+        newdata = CFPropertyList.native_types(newplist.value)
+        bplist = CFPropertyList::List.new
+        bplist.load_binary_str(newdata['ShadowHashData'][0])
+        bplistdata = CFPropertyList.native_types(bplist.value)
+        password_hash = bplistdata['SALTED-SHA512'].unpack(&quot;H*&quot;)[0][8..-1]
+
+
+Nate's Gist --&gt; https://gist.github.com/1445697</code></pre></noscript></div>
+
 
 <p>and here&#8217;s a bit of what i worked out so far:</p>
 
-<p>{% gist 1445697}</p>
+<div><script src='https://gist.github.com/1445697.js?file='></script>
+<noscript><pre><code>#!/usr/bin/env ruby
+## parse os x 10.7 shado hash data
+#
+require &quot;rexml/document&quot;
+include REXML
+require &quot;base64&quot;
+
+def parse_plist(plist)
+    parsed = []
+    doc = Document.new File.new(plist)
+    doc.elements.each(&quot;plist/data&quot;) {|e| parsed &lt;&lt; e}
+end
+
+def base64_shadow(hash)
+   encoded = Base64.encode64(hash) 
+   decoded = Base64.decode64(Base64.encode64(hash))
+   #puts &quot;encoded: #{encoded}&quot;
+   #puts &quot;decoded: #{decoded}&quot;
+end
+
+
+
+
+puts parse_plist(&quot;/tmp/password.plist&quot;)
+base64_shadow(&quot;password&quot;)
+</code></pre></noscript></div>
+
 
 <p>i always enjoy collaborating with people across the &#8216;tubes. there&#8217;s no real point to this post; just jotting down some thoughts while waiting for some processes to finish.</p>
 </div>
