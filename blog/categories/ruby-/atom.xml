@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: ruby, | a rock, a paper, and a goat]]></title>
+  <link href="http://rockpapergoat.github.com/blog/categories/ruby-/atom.xml" rel="self"/>
+  <link href="http://rockpapergoat.github.com/"/>
+  <updated>2011-12-09T13:23:21-05:00</updated>
+  <id>http://rockpapergoat.github.com/</id>
+  <author>
+    <name><![CDATA[nate st.germain]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[some tinkering with hashed passwords]]></title>
+    <link href="http://rockpapergoat.github.com/blog/2011/12/09/some-tinkering-with-hashed-passwords/"/>
+    <updated>2011-12-09T13:06:00-05:00</updated>
+    <id>http://rockpapergoat.github.com/blog/2011/12/09/some-tinkering-with-hashed-passwords</id>
+    <content type="html"><![CDATA[<p>the other night, <a href="http://twitter.com/#!/glarizza">gary</a> tweeted about a puppet/os x 10.7 password <a href="http://projects.puppetlabs.com/issues/11293">bug</a> i started looking at awhile back.</p>
+
+<p>it's good practice. i've been less focused on ruby lately than i'd like, and as <a href="http://sysadvent.blogspot.com/2011/12/day-6-always-be-hacking.html">@lusis</a> says: "always be hacking."</p>
+
+<p>here's some notes from gary on the problem:</p>
+
+<p>{% gist 1445481}</p>
+
+<p>and here's a bit of what i worked out so far:</p>
+
+<p>{% gist 1445697}</p>
+
+<p>i always enjoy collaborating with people across the 'tubes. there's no real point to this post; just jotting down some thoughts while waiting for some processes to finish.</p>
+]]></content>
+  </entry>
+  
+</feed>
