@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ruby, | a rock, a paper, and a goat]]></title>
   <link href="http://rockpapergoat.github.com/blog/categories/ruby-/atom.xml" rel="self"/>
   <link href="http://rockpapergoat.github.com/"/>
-  <updated>2011-12-09T13:25:40-05:00</updated>
+  <updated>2012-01-28T10:41:16-05:00</updated>
   <id>http://rockpapergoat.github.com/</id>
   <author>
     <name><![CDATA[nate st.germain]]></name>
@@ -12,6 +12,17 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[macutils]]></title>
+    <link href="http://rockpapergoat.github.com/blog/2012/01/28/macutils/"/>
+    <updated>2012-01-28T10:02:00-05:00</updated>
+    <id>http://rockpapergoat.github.com/blog/2012/01/28/macutils</id>
+    <content type="html"><![CDATA[<p>new year, new job...</p>
+
+<p>i started compiling some common routines for mac admin tasks in a ruby library <a href="https://github.com/rockpapergoat/macutils">here</a>. if it's useful to you, or you have suggestions, let me know. it's just a class right now, but i'll probably turn it into a module. if you're already using some other type of <a href="http://puppetlabs.com">configuration</a> <a href="http://www.opscode.com/chef/">management</a> (and you should be), most of this may not matter. my main goal is to write something useful, practice writing more ruby, and to avoid sitting in the <a href="http://en.wikipedia.org/wiki/Parkinson's_Law_of_Triviality">bike shed</a> too much. i may have failed on the last point...</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[some tinkering with hashed passwords]]></title>

@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>mcollective tinkering, part 2 - a rock, a paper, and a goat</title>
+  <title>macutils - a rock, a paper, and a goat</title>
   <meta name="author" content="nate st.germain">
 
   
-  <meta name="description" content="following up the previous post, i have a working agent uploaded. so far, it doesn&#8217;t do too much. i also sort of take back the gripe about agent &hellip;">
+  <meta name="description" content="new year, new job&#8230; i started compiling some common routines for mac admin tasks in a ruby library here. if it&#8217;s useful to you, or you &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://rockpapergoat.github.com/blog/2011/11/23/mcollective-tinkering">
+  <link rel="canonical" href="http://rockpapergoat.github.com/blog/2012/01/28/macutils">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -65,7 +65,7 @@
   
   <header>
     
-      <h1 class="entry-title">Mcollective Tinkering, Part 2</h1>
+      <h1 class="entry-title">Macutils</h1>
     
     
       <p class="meta">
@@ -81,18 +81,16 @@
   
 
 
-<time datetime="2011-11-23T18:53:00-05:00" pubdate data-updated="true">Nov 23<span>rd</span>, 2011</time>
+<time datetime="2012-01-28T10:02:00-05:00" pubdate data-updated="true">Jan 28<span>th</span>, 2012</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>following up the previous post, i have a working <a href="https://github.com/rockpapergoat/mcollective-plugins/tree/macutil/agent/macutil">agent</a> uploaded. so far, it doesn&#8217;t do too much.</p>
+<div class="entry-content"><p>new year, new job&#8230;</p>
 
-<p>i also sort of take back the gripe about agent documentation. i see now there&#8217;s some facility for including usage statements, though i&#8217;ve only seen them in application files, not agents. need to check the docs again&#8230;</p>
-
-<p>next up is getting a handle on input and output syntax and doing more interesting things. i intend to gear the macutil agent toward common os x specific tasks one might want to perform, but as i&#8217;m running through a pile of utility scripts, it&#8217;s pretty obvious that so much of these one-off shell/ruby/python/whatever scripts are reactionary. there are many places where proper configuration management tools and processes are a more appropriate fit.</p>
+<p>i started compiling some common routines for mac admin tasks in a ruby library <a href="https://github.com/rockpapergoat/macutils">here</a>. if it&#8217;s useful to you, or you have suggestions, let me know. it&#8217;s just a class right now, but i&#8217;ll probably turn it into a module. if you&#8217;re already using some other type of <a href="http://puppetlabs.com">configuration</a> <a href="http://www.opscode.com/chef/">management</a> (and you should be), most of this may not matter. my main goal is to write something useful, practice writing more ruby, and to avoid sitting in the <a href="http://en.wikipedia.org/wiki/Parkinson's_Law_of_Triviality">bike shed</a> too much. i may have failed on the last point&#8230;</p>
 </div>
 
 
@@ -115,15 +113,21 @@
   
 
 
-<time datetime="2011-11-23T18:53:00-05:00" pubdate data-updated="true">Nov 23<span>rd</span>, 2011</time>
+<time datetime="2012-01-28T10:02:00-05:00" pubdate data-updated="true">Jan 28<span>th</span>, 2012</time>
       
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/admin/'>admin</a>, <a class='category' href='/blog/categories/mac/'>mac</a>, <a class='category' href='/blog/categories/ruby-/'>ruby,</a>
+  
+</span>
 
 
     </p>
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://rockpapergoat.github.com/blog/2011/11/23/mcollective-tinkering/" data-via="rockpapergoat" data-counturl="http://rockpapergoat.github.com/blog/2011/11/23/mcollective-tinkering/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://rockpapergoat.github.com/blog/2012/01/28/macutils/" data-via="rockpapergoat" data-counturl="http://rockpapergoat.github.com/blog/2012/01/28/macutils/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -136,10 +140,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2011/11/21/mcollective-tinkering/" title="Previous Post: mcollective tinkering">&laquo; mcollective tinkering</a>
+        <a class="basic-alignment left" href="/blog/2011/12/09/some-tinkering-with-hashed-passwords/" title="Previous Post: some tinkering with hashed passwords">&laquo; some tinkering with hashed passwords</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2011/12/09/some-tinkering-with-hashed-passwords/" title="next Post: some tinkering with hashed passwords">some tinkering with hashed passwords &raquo;</a>
       
     </p>
   </footer>
