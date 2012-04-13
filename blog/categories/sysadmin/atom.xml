@@ -4,7 +4,7 @@
   <title><![CDATA[Category: sysadmin | a rock, a paper, and a goat]]></title>
   <link href="http://rockpapergoat.github.com/blog/categories/sysadmin/atom.xml" rel="self"/>
   <link href="http://rockpapergoat.github.com/"/>
-  <updated>2012-04-13T16:07:50-04:00</updated>
+  <updated>2012-04-13T16:09:34-04:00</updated>
   <id>http://rockpapergoat.github.com/</id>
   <author>
     <name><![CDATA[nate st.germain]]></name>
@@ -175,7 +175,7 @@ usr/libexec/MRT
 </code></pre></noscript></div>
 </p>
 
-<p>similarly, the launchdamon calls /usr/libexec/MRT.</p>
+<p>similarly, the launchdaemon calls /usr/libexec/MRT.</p>
 
 <p><div><script src='https://gist.github.com/2379629.js?file='></script>
 <noscript><pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
