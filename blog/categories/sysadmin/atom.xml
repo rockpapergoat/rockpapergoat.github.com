@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: sysadmin | a rock, a paper, and a goat]]></title>
+  <link href="http://rockpapergoat.github.com/blog/categories/sysadmin/atom.xml" rel="self"/>
+  <link href="http://rockpapergoat.github.com/"/>
+  <updated>2012-04-13T16:06:20-04:00</updated>
+  <id>http://rockpapergoat.github.com/</id>
+  <author>
+    <name><![CDATA[nate st.germain]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[osx java security update]]></title>
+    <link href="http://rockpapergoat.github.com/blog/2012/04/13/osx-java-security-update/"/>
+    <updated>2012-04-13T14:46:00-04:00</updated>
+    <id>http://rockpapergoat.github.com/blog/2012/04/13/osx-java-security-update</id>
+    <content type="html"><![CDATA[<p>after all the media coverage of the recent <a href="http://www.f-secure.com/v-descs/trojan-downloader_osx_flashback_i.shtml">flashback</a> malware on os x, apple released <em>another</em> <a href="http://support.apple.com/kb/DL1515">java update</a> yesterday that includes a "removal tool."</p>
+
+<p>there wasn't much mention of what the removal tool does in the release notes. how do you use it? what does it do?</p>
+
+<p>on two test machines, running 10.6.8 and 10.7.3, respectively, i installed the latest java update. the receipts db shows that a pkg with id com.apple.pkg.JavaSecurity was installed. checking the flat package contents, it's part of the payload.</p>
+
+<p>here's what's installed:</p>
+
+<p><div><script src='https://gist.github.com/2379567.js?file='></script>
+<noscript><pre><code>System
+System/Library
+System/Library/CoreServices
+System/Library/CoreServices/MRTAgent.app
+System/Library/CoreServices/MRTAgent.app/Contents
+System/Library/CoreServices/MRTAgent.app/Contents/CodeResources
+System/Library/CoreServices/MRTAgent.app/Contents/Info.plist
+System/Library/CoreServices/MRTAgent.app/Contents/MacOS
+System/Library/CoreServices/MRTAgent.app/Contents/MacOS/MRTAgent
+System/Library/CoreServices/MRTAgent.app/Contents/PkgInfo
+System/Library/CoreServices/MRTAgent.app/Contents/Resources
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/Dutch.lproj
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/Dutch.lproj/InfoPlist.strings
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/Dutch.lproj/Localized.strings
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/Dutch.lproj/MainMenu.nib
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/Dutch.lproj/MainMenu.nib/keyedobjects.nib
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/English.lproj
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/English.lproj/InfoPlist.strings
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/English.lproj/Localized.strings
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/English.lproj/MainMenu.nib
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/English.lproj/MainMenu.nib/keyedobjects.nib
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/French.lproj
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/French.lproj/InfoPlist.strings
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/French.lproj/Localized.strings
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/French.lproj/MainMenu.nib
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/French.lproj/MainMenu.nib/keyedobjects.nib
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/German.lproj
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/German.lproj/InfoPlist.strings
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/German.lproj/Localized.strings
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/German.lproj/MainMenu.nib
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/German.lproj/MainMenu.nib/keyedobjects.nib
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/Italian.lproj
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/Italian.lproj/InfoPlist.strings
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/Italian.lproj/Localized.strings
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/Italian.lproj/MainMenu.nib
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/Italian.lproj/MainMenu.nib/keyedobjects.nib
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/Japanese.lproj
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/Japanese.lproj/InfoPlist.strings
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/Japanese.lproj/Localized.strings
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/Japanese.lproj/MainMenu.nib
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/Japanese.lproj/MainMenu.nib/keyedobjects.nib
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/Spanish.lproj
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/Spanish.lproj/InfoPlist.strings
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/Spanish.lproj/Localized.strings
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/Spanish.lproj/MainMenu.nib
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/Spanish.lproj/MainMenu.nib/keyedobjects.nib
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/da.lproj
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/da.lproj/InfoPlist.strings
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/da.lproj/Localized.strings
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/da.lproj/MainMenu.nib
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/da.lproj/MainMenu.nib/keyedobjects.nib
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/fi.lproj
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/fi.lproj/InfoPlist.strings
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/fi.lproj/Localized.strings
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/fi.lproj/MainMenu.nib
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/fi.lproj/MainMenu.nib/keyedobjects.nib
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/ko.lproj
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/ko.lproj/InfoPlist.strings
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/ko.lproj/Localized.strings
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/ko.lproj/MainMenu.nib
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/ko.lproj/MainMenu.nib/keyedobjects.nib
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/no.lproj
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/no.lproj/InfoPlist.strings
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/no.lproj/Localized.strings
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/no.lproj/MainMenu.nib
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/no.lproj/MainMenu.nib/keyedobjects.nib
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/pl.lproj
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/pl.lproj/InfoPlist.strings
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/pl.lproj/Localized.strings
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/pl.lproj/MainMenu.nib
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/pl.lproj/MainMenu.nib/keyedobjects.nib
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/pt.lproj
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/pt.lproj/InfoPlist.strings
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/pt.lproj/Localized.strings
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/pt.lproj/MainMenu.nib
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/pt.lproj/MainMenu.nib/keyedobjects.nib
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/pt_PT.lproj
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/pt_PT.lproj/InfoPlist.strings
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/pt_PT.lproj/Localized.strings
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/pt_PT.lproj/MainMenu.nib
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/pt_PT.lproj/MainMenu.nib/keyedobjects.nib
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/ru.lproj
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/ru.lproj/InfoPlist.strings
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/ru.lproj/Localized.strings
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/ru.lproj/MainMenu.nib
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/ru.lproj/MainMenu.nib/keyedobjects.nib
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/sv.lproj
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/sv.lproj/InfoPlist.strings
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/sv.lproj/Localized.strings
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/sv.lproj/MainMenu.nib
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/sv.lproj/MainMenu.nib/keyedobjects.nib
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/zh_CN.lproj
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/zh_CN.lproj/InfoPlist.strings
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/zh_CN.lproj/Localized.strings
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/zh_CN.lproj/MainMenu.nib
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/zh_CN.lproj/MainMenu.nib/keyedobjects.nib
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/zh_TW.lproj
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/zh_TW.lproj/InfoPlist.strings
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/zh_TW.lproj/Localized.strings
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/zh_TW.lproj/MainMenu.nib
+System/Library/CoreServices/MRTAgent.app/Contents/Resources/zh_TW.lproj/MainMenu.nib/keyedobjects.nib
+System/Library/CoreServices/MRTAgent.app/Contents/_CodeSignature
+System/Library/CoreServices/MRTAgent.app/Contents/_CodeSignature/CodeResources
+System/Library/CoreServices/MRTAgent.app/Contents/version.plist
+System/Library/LaunchAgents
+System/Library/LaunchAgents/com.apple.mrt.uiagent.plist
+System/Library/LaunchDaemons
+System/Library/LaunchDaemons/com.apple.mrt.plist
+usr
+usr/libexec
+usr/libexec/MRT
+</code></pre></noscript></div>
+</p>
+
+<p>great. let's check out /usr/libexec/MRT to see what that does. hey, it's not there... i checked the paths specified in the payload, but none of it was to be found.</p>
+
+<p>hmmm...</p>
+
+<p>both test machines showed the same behavior: installed the pkg but left no trace of the binaries.</p>
+
+<p>the launchagent installed calls the MRTAgent.app under CoreServices.</p>
+
+<p><div><script src='https://gist.github.com/2379606.js?file='></script>
+<noscript><pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE plist PUBLIC &quot;-//Apple//DTD PLIST 1.0//EN&quot; &quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&quot;&gt;
+&lt;plist version=&quot;1.0&quot;&gt;
+&lt;dict&gt;
+	&lt;key&gt;RunAtLoad&lt;/key&gt;
+	&lt;true/&gt;
+	&lt;key&gt;LimitLoadToSessionType&lt;/key&gt;
+	&lt;string&gt;Aqua&lt;/string&gt;
+	&lt;key&gt;Label&lt;/key&gt;
+	&lt;string&gt;com.apple.mrt.uiagent&lt;/string&gt;
+	&lt;key&gt;Program&lt;/key&gt;
+	&lt;string&gt;/System/Library/CoreServices/MRTAgent.app/Contents/MacOS/MRTAgent&lt;/string&gt;
+	&lt;key&gt;KeepAlive&lt;/key&gt;
+	&lt;dict&gt;
+		&lt;key&gt;OtherJobEnabled&lt;/key&gt;
+		&lt;dict&gt;
+			&lt;key&gt;com.apple.mrt&lt;/key&gt;
+			&lt;true/&gt;
+		&lt;/dict&gt;
+	&lt;/dict&gt;
+&lt;/dict&gt;
+&lt;/plist&gt;
+</code></pre></noscript></div>
+</p>
+
+<p>similarly, the launchdamon calls /usr/libexec/MRT.</p>
+
+<p><div><script src='https://gist.github.com/2379629.js?file='></script>
+<noscript><pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE plist PUBLIC &quot;-//Apple//DTD PLIST 1.0//EN&quot; &quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&quot;&gt;
+&lt;plist version=&quot;1.0&quot;&gt;
+&lt;dict&gt;
+	&lt;key&gt;MachServices&lt;/key&gt;
+	&lt;dict&gt;
+		&lt;key&gt;com.apple.mrt&lt;/key&gt;
+		&lt;true/&gt;
+	&lt;/dict&gt;
+	&lt;key&gt;KeepAlive&lt;/key&gt;
+	&lt;dict&gt;
+		&lt;key&gt;SuccessfulExit&lt;/key&gt;
+		&lt;false/&gt;
+	&lt;/dict&gt;
+	&lt;key&gt;Label&lt;/key&gt;
+	&lt;string&gt;com.apple.mrt&lt;/string&gt;
+	&lt;key&gt;ProgramArguments&lt;/key&gt;
+	&lt;array&gt;
+		&lt;string&gt;/usr/libexec/MRT&lt;/string&gt;
+	&lt;/array&gt;
+	&lt;key&gt;RunAtLoad&lt;/key&gt;
+	&lt;true/&gt;
+&lt;/dict&gt;
+&lt;/plist&gt;
+</code></pre></noscript></div>
+</p>
+
+<p>the pkg postflight looks sort of crude:</p>
+
+<p><div><script src='https://gist.github.com/2379640.js?file='></script>
+<noscript><pre><code>#!/bin/sh
+
+# only works on SL
+/bin/launchctl unload -S Aqua /System/Library/LaunchAgents/com.apple.mrt.uiagent.plist
+/bin/launchctl load -w -S Aqua /System/Library/LaunchAgents/com.apple.mrt.uiagent.plist
+# only works on Lion
+/bin/launchctl asuser `id -u &quot;$USER&quot;` /bin/launchctl unload -S Aqua /System/Library/LaunchAgents/com.apple.mrt.uiagent.plist
+/bin/launchctl asuser `id -u &quot;$USER&quot;` /bin/launchctl load -w -S Aqua /System/Library/LaunchAgents/com.apple.mrt.uiagent.plist
+
+/bin/launchctl unload /System/Library/LaunchDaemons/com.apple.mrt.plist
+/bin/launchctl load -w /System/Library/LaunchDaemons/com.apple.mrt.plist</code></pre></noscript></div>
+</p>
+
+<p>so it unloads, then loads the launchd jobs. fine so far, i guess.</p>
+
+<p>a very unscientific scan through the MRT binary with <code>strings</code> provides <a href="https://gist.github.com/2379668">some idea</a> of what it's looking for, at least. it has some reference to at least two variants of flashback; appears to check safari, chrome, and firefox (but not other browsers); and looks through system and user homedirs.</p>
+
+<p>since it apparently removed itself on my systems, i rsynced the files into place, reloaded the daemon and agent, and tried manually running MRT. as soon as i did that, all the components were gone. so this is the intended behavior?</p>
+
+<p>i'm guessing that on infected machines, it will do some type of removal before removing these components. it seems that apple assumes you've installed the java update, so the vulnerability is fixed, and there's no need for the removal tools any more.</p>
+
+<p>if that's the case, apple should clarify this is the intended behavior in the release notes. i know some people have been looking to this update to provide some type of useful malware removal and prevention utility, which doesn't appear to be the case.</p>
+
+<p>am i missing something here? have any of you seen different results?</p>
+]]></content>
+  </entry>
+  
+</feed>
