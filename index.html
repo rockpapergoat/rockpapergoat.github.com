@@ -9,7 +9,7 @@
   <meta name="author" content="nate st.germain">
 
   
-  <meta name="description" content="after all the media coverage of the recent flashback malware on os x, apple released another java update yesterday that includes a &#8220;removal &hellip;">
+  <meta name="description" content="updating the previous post, i checked out apple&#8217;s separate flashback malware remover released yesterday. the release notes say it requires 10.7 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -62,6 +62,56 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/04/14/osx-java-security-update/">Osx Java Security Update</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-04-14T11:15:00-04:00" pubdate data-updated="true">Apr 14<span>th</span>, 2012</time>
+        
+         | <a href="/blog/2012/04/14/osx-java-security-update/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>updating the previous post, i checked out apple&#8217;s separate <a href="http://support.apple.com/kb/DL1517">flashback malware remover</a> released yesterday. the release notes say it requires 10.7 and recommends installing on machines without java installed. does this malware even work without java installed?</p>
+
+<p>installing it on my 10.7.3 test box didn&#8217;t do much. since it&#8217;s not infected, it looks like the behavior is exactly the same as the bundled payload in the java security pkg. it installs, checks, then remove its components if there&#8217;s nothing to do. there are a few log entries that show its check status and a reference to xpchelper, which is part of apple&#8217;s xprotect that&#8217;s supposed to deal with malware.</p>
+
+<div><script src='https://gist.github.com/2385201.js?file='></script>
+<noscript><pre><code>Apr 14 11:12:58 buckethead xpchelper[2449]: could not open dyld map file: (null)
+Apr 14 11:12:58 buckethead com.apple.launchd[1]: System: Could not find requested session: Aqua
+Apr 14 11:13:00 buckethead MRT[2468]: MRT finished scan. Malware files were not found.
+Apr 14 11:13:00 buckethead MRT[2468]: FAILURE: Job com.apple.mrt.uiagent is not loaded in launchd.
+Apr 14 11:13:00 buckethead MRT[2468]: Error: SMJobRemove: The operation couldn’t be completed. (kSMErrorDomainLaunchd error 6 - The specified job could not be found.)</code></pre></noscript></div>
+
+
+<p>looks like this is all they want the removal tool to do. it won&#8217;t run as a service, instead doing a one-time scan before committing hara kiri.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -616,6 +666,10 @@ base64_shadow(&quot;password&quot;)
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/04/14/osx-java-security-update/">osx java security update</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/04/13/osx-java-security-update/">OS X java security update</a>
       </li>
     
@@ -629,10 +683,6 @@ base64_shadow(&quot;password&quot;)
     
       <li class="post">
         <a href="/blog/2011/11/23/mcollective-tinkering/">mcollective tinkering, part 2</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2011/11/21/mcollective-tinkering/">mcollective tinkering</a>
       </li>
     
   </ul>
