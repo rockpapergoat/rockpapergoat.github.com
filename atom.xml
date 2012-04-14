@@ -4,7 +4,7 @@
   <title><![CDATA[a rock, a paper, and a goat]]></title>
   <link href="http://rockpapergoat.github.com/atom.xml" rel="self"/>
   <link href="http://rockpapergoat.github.com/"/>
-  <updated>2012-04-14T11:30:44-04:00</updated>
+  <updated>2012-04-14T11:32:31-04:00</updated>
   <id>http://rockpapergoat.github.com/</id>
   <author>
     <name><![CDATA[nate st.germain]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[osx java security update]]></title>
-    <link href="http://rockpapergoat.github.com/blog/2012/04/14/osx-java-security-update/"/>
+    <link href="http://rockpapergoat.github.com/blog/2012/04/14/osx-java-security-update-part-2/"/>
     <updated>2012-04-14T11:15:00-04:00</updated>
-    <id>http://rockpapergoat.github.com/blog/2012/04/14/osx-java-security-update</id>
+    <id>http://rockpapergoat.github.com/blog/2012/04/14/osx-java-security-update-part-2</id>
     <content type="html"><![CDATA[<p>updating the previous post, i checked out apple&#8217;s separate <a href="http://support.apple.com/kb/DL1517">flashback malware remover</a> released yesterday. the release notes say it requires 10.7 and recommends installing on machines without java installed. does this malware even work without java installed?</p>
 
 <p>installing it on my 10.7.3 test box didn&#8217;t do much. since it&#8217;s not infected, it looks like the behavior is exactly the same as the bundled payload in the java security pkg. it installs, checks, then remove its components if there&#8217;s nothing to do. there are a few log entries that show its check status and a reference to xpchelper, which is part of apple&#8217;s xprotect that&#8217;s supposed to deal with malware.</p>
