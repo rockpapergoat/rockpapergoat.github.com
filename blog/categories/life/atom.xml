@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: life | a rock, a paper, and a goat]]></title>
+  <link href="http://rockpapergoat.github.com/blog/categories/life/atom.xml" rel="self"/>
+  <link href="http://rockpapergoat.github.com/"/>
+  <updated>2012-12-03T15:20:41-05:00</updated>
+  <id>http://rockpapergoat.github.com/</id>
+  <author>
+    <name><![CDATA[nate st.germain]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[time passes]]></title>
+    <link href="http://rockpapergoat.github.com/blog/2012/12/03/time-passes/"/>
+    <updated>2012-12-03T15:01:00-05:00</updated>
+    <id>http://rockpapergoat.github.com/blog/2012/12/03/time-passes</id>
+    <content type="html"><![CDATA[<p>it's been awhile since i last posted. i'm a dad, have changed positions in my company, and am adjusting to all of that. i'm doing sysadmin work more in line with my career aspirations, which is a good thing. it's nice to break out of the world of "mac admin."</p>
+
+<p>by far, parenting is the biggest challenge i've ever undertaken. i wouldn't be able to do it without <a href="http://fivefootview.blogspot.com">sarah</a>, my rock. <a href="http://thisnoodle.com/post/31153301219/emmett-a-boy-with-ideas">emmett</a> is a great kid so far. he's funny, curious, and active. and it's only been 7 months. i can't wait to see who he becomes. sleep has been difficult for us (and him) at times. we're adjusting, as all new parents do.</p>
+
+<p>like all parents, i'm struggling with balancing family, career, personal development, health and well-being, etc. i have all kinds of things i want to do to further my career, like learning new technology and languages, building distributed systems, and playing more with AWS. how do people with families do it? just getting out the door to get to work can be difficult many mornings. i try to work from home a bit in the morning before stopping at the office. my employer is definitely old-school, preferring staff to be in the building from 8:30 - 5 every day. anyway, i'm finding it difficult to work toward my goal of getting more proficient in things that will allow me to join a distributed/remote team someday. just gotta keep plugging away...</p>
+
+<p>i'm currently reading <a href="http://pragprog.com/book/btlang/seven-languages-in-seven-weeks">Seven Languages in Seven Weeks</a>, among other things, and hoping it spurs me to jump into some other directions.</p>
+
+<p>by the way, is there a <a href="http://twitter.com/search?q=%23dadops">#dadops</a> irc channel? there probably should be.</p>
+]]></content>
+  </entry>
+  
+</feed>
