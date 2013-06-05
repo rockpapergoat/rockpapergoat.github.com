@@ -4,7 +4,7 @@
   <title><![CDATA[Category: macadmin | a rock, a paper, and a goat]]></title>
   <link href="http://rockpapergoat.github.com/blog/categories/macadmin/atom.xml" rel="self"/>
   <link href="http://rockpapergoat.github.com/"/>
-  <updated>2013-06-05T10:44:25-04:00</updated>
+  <updated>2013-06-05T10:47:25-04:00</updated>
   <id>http://rockpapergoat.github.com/</id>
   <author>
     <name><![CDATA[nate st.germain]]></name>
@@ -20,7 +20,7 @@
     <id>http://rockpapergoat.github.com/blog/2013/03/13/a-quagmire</id>
     <content type="html"><![CDATA[<p>it's a new year, and with it, i've changed jobs. since february, i'm working part time down the street at <a href="http://tufts.edu">tufts university</a> doing some general linux sysadmin stuff. working at <a href="http://ll.mit.edu">lincoln laboratory</a> was an interesting experience, and i continue to appreciate how accommodating people were there during the birth of our son and the ensuing schedule change due to daycare, etc. long term, it wasn't the right type of work environment for me.</p>
 
-<p>i've had a blog post percolating for awhile about the mac admin community, of which i was a part for many years. this morning as i sit here typing, the steam has dissipated a bit. after being involved in the community for so long, it just got too discouraging to see the same questions, the same conference talks, the same problems being discussed. a recent conference schedule included many of the same people and topics i saw three or more years ago. there's always going to be some level of <a href="https://en.wikipedia.org/wiki/Parkinson's_law_of_triviality">bikeshedding</a>, but it's really disappointing to see a community (and some commerciamanagement products) embrace that mentality as "best practices."</p>
+<p>i've had a blog post percolating for awhile about the mac admin community, of which i was a part for many years. this morning as i sit here typing, the steam has dissipated a bit. after being involved in the community for so long, it just got too discouraging to see the same questions, the same conference talks, the same problems being discussed. a recent conference schedule included many of the same people and topics i saw three or more years ago. there's always going to be some level of <a href="https://en.wikipedia.org/wiki/Parkinson's_law_of_triviality">bikeshedding</a>, but it's really disappointing to see a community (and some commercial management products) embrace that mentality as "best practices."</p>
 
 <p>that's about all i'll say here. i'm looking forward to new challenges, throwing myself fully into sysadmin work and configuration management. speaking of which, if you're in the boston area and interested in some informal shop talk about distributed systems, configuration, management, and all things "devops," stop by the next <a href="https://twitter.com/BosOps">BosOps</a> meetup.</p>
 ]]></content>
